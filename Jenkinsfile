@@ -14,7 +14,7 @@ pipeline{
         COMPONENT = "catalogue"
     }
     options {
-        timeout(time: 30, unit: 'MMINUTES')
+        timeout(time: 30, unit: 'MINUTES')
         disableConcurrentBuilds()
     }
     parameters {
