@@ -1,7 +1,7 @@
 deployment:
   replicas: 1
-  #imageURL: praneeth2701/catalogue
-  imageURL: IMAGE_URL
+  imageURL: praneeth2701/catalogue
+  #imageURL: IMAGE_URL
   imageVersion: IMAGE_VERSION
 hpa:
   maxReplicas: 10

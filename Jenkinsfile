@@ -19,7 +19,7 @@ pipeline{
     }
     parameters {
         string(name: 'appVersion', description: 'Image Version of the application')
-        string(name: 'imageURL', description: 'Image URL of the application')
+        //string(name: 'imageURL', description: 'Image URL of the application')
         choice(name: 'deploy_to', choices: ['dev', 'qa', 'prod'], description: 'Choose the Environment')
     } 
     
