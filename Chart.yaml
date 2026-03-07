@@ -1,0 +1,5 @@
+apiVersion: v2                              # Chart API version
+name: catalogue                             # Chart name
+version: 1.0.0                              # Chart version
+description: catalogue helm chart           # Chart description
+appVersion: v1                              # application version
