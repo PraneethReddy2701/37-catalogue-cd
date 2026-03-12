@@ -1,6 +1,6 @@
 deployment:
   replicas: 1
-  imageURL: praneeth2701/catalogue
+  imageURL: 235270182665.dkr.ecr.us-east-1.amazonaws.com/roboshop/catalogue
   #imageURL: IMAGE_URL
   imageVersion: IMAGE_VERSION
 hpa:

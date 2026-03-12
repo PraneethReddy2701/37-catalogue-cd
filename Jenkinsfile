@@ -40,6 +40,16 @@ pipeline{
                 }
             }
         }
+
+/*         stage('Check Status'){
+            steps{
+                script{
+                    withAWS(credentials: 'aws-creds', region: 'us-east-1'){
+
+                    }
+                }
+            }
+        } */
     }
 
    // Post-Build
