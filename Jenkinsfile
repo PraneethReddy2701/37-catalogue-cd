@@ -68,6 +68,32 @@ pipeline{
                 }
             }
         }
+        // API Testing
+        stage('Functional Testing'){
+            when{
+                expression {
+                    params.deploy_to = "dev"
+                }
+            }
+            steps{
+                script{
+                    echo "Run Functional test cases"
+                }
+            }
+        }
+        // All Components Testing
+        stage('Integration Testing'){
+            when{
+                expression {
+                    params.deploy_to = "qa"
+                }
+            }
+            steps{
+                script{
+                    echo "Run Integration test cases"
+                }
+            }
+        }
     }
 
    // Post-Build
