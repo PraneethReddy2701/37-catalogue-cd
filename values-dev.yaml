@@ -2,7 +2,8 @@ deployment:
   replicas: 1
   imageURL: 235270182665.dkr.ecr.us-east-1.amazonaws.com/roboshop/catalogue
   # imageURL: v2
-  imageVersion: IMAGE_VERSION
+  #imageVersion: IMAGE_VERSION
+  imageVersion: 1.0.0
 hpa:
   maxReplicas: 10
   Utilization: 75
