@@ -83,7 +83,7 @@ pipeline{
         stage('Integration Testing'){
             when{
                 expression {
-                    params.deploy_to = "qa"
+                    params.deploy_to == "qa"
                 }
             }
             steps{
