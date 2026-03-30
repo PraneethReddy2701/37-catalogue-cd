@@ -92,6 +92,23 @@ pipeline{
                 }
             }
         }
+        stage('PROD Deploy'){
+            when{
+                expression{ params.deploy_to == "prod"}
+            }
+            steps{
+                script{
+                    withAWS( credentials: 'aws-creds', region: 'us-east-1'){
+                        sh """
+                            echo "get CR number"
+                            echo "check whether it is in deployment window"
+                            echo "is CR approved"
+                            echo "trigger PROD Deploy"
+                        """
+                    }
+                }
+            }
+        }
     }
 
    // Post-Build
